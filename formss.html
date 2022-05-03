@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+        <body>
+            <form id="first" onsubmit="return validform()">
+                name: <input type="text" id="fname" name="fname">
+                <br>
+                phone: <input type="number" id="num" name="num">
+                <br>
+                <input type="submit" name="Submit">
+            </form>
+            <script>
+                function validform(){
+                    var n , x
+                    n = document.getElementById("fname").value;
+                    if (n == ""){
+                        alert ("please fill name");
+                    }
+                    x = document.getElementById("num").value.length;
+                    if (x > 10 || x < 10){
+                        alert ("number not valid");
+                    }
+                    
+                }
+            </script>
+        </body>
+    
+</html>
